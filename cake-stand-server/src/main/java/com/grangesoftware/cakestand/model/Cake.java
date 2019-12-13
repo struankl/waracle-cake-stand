@@ -2,11 +2,13 @@ package com.grangesoftware.cakestand.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Table;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import java.io.Serializable;
 
 @Entity
+@Table(name = "cakes")
 public class Cake implements Serializable {
 
     public Cake () {};
