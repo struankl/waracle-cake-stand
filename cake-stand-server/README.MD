@@ -1,4 +1,4 @@
-#Server project for Waracle technical test.
+# Server project for Waracle technical test.
 
 To build &this execute this project execute the following commands in the root directory of the server project:
   * ./mvnw install
