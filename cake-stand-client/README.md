@@ -4,7 +4,7 @@ Client project for Waracle technical test. To build & run execute follow in the 
   * `yarn install`
   * `yarn start`
 
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser. This application expects to find the server running on port 8080 on localhost, if this is not the case `src/config/index.js` must be updated to reflect where the server's url.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
