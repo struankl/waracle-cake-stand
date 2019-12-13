@@ -1,7 +1,8 @@
 import { isResponseOk } from './utils';
+import { CAKE_STAND_SERVER } from '../config';
 
 export default async (id) => {
-  const response = await fetch(`http://localhost:8080/cakes/${id}`, {
+  const response = await fetch(`${CAKE_STAND_SERVER}/cakes/${id}`, {
     method: 'DELETE',
     headers: {
       'Content-Type': 'application/json',

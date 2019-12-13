@@ -10,17 +10,17 @@ import * as apis from '../../api';
 jest.mock('../../api', () => ({
   loadCake: jest.fn(),
   updateCake: jest.fn(),
-  addCake: jest.fn()
+  addCake: jest.fn(),
 }));
 
 const renderWithRoute = (history = createMemoryHistory({ initialEntries: ['/2'] })) => render(
   <Router history={history}>
     <Switch>
       <Route path="/new">
-        <ViewCake/>
+        <ViewCake />
       </Route>
       <Route path="/:cakeId">
-        <ViewCake/>
+        <ViewCake />
       </Route>
       <Route path="/">
         <div>Home Page</div>
@@ -234,7 +234,6 @@ describe('ViewCake', () => {
   });
 
   describe('new cake', () => {
-
     test('cancel button returns to home page', async () => {
       const history = createMemoryHistory({ initialEntries: ['/new'] });
       const { getByText } = renderWithRoute(history);

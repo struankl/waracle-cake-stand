@@ -209,7 +209,8 @@ export default () => {
   const onImageLoaded = () => setImageLoaded(true);
 
   useEffect(() => {
-    if (cakeId && parseInt(cakeId, 10) === cake?.id) {
+    const { id } = cake || {};
+    if (cakeId && parseInt(cakeId, 10) === id) {
       return;
     }
 
